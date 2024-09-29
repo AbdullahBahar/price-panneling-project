@@ -22,6 +22,13 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  height: 100vh;  /* Ensure the body takes full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center; /* Center horizontally */
+  padding: 0;
+  margin: 0;
 }
 
 /*
@@ -67,14 +74,6 @@ h6 {
   isolation: isolate;
 }
 
-body {
-  background-color: #60a9ff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
 html {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
@@ -91,6 +90,8 @@ html {
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  min-height: 80vh;  /* Ensure it takes up enough vertical space */
+  margin-top: 20px; /* Added a small margin to prevent sticking to the top */
 }
 
 .pricing-plan {
@@ -179,6 +180,5 @@ ul {
   .pricing-plan:last-child {
     border-right: none;
   }
-
 
 }
